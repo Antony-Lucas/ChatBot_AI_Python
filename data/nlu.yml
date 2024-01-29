@@ -1,13 +1,5 @@
 version: "3.1"
 
-intents:
-  - informacoes_atendimento
-  - quantidade_atenimentos
-  - medico_atendimentos
-
-entities:
-  - atendimento_paciente
-
 nlu:
   - intent: informacoes_atendimento
     examples: |

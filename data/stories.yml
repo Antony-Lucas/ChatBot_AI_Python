@@ -1,17 +1,27 @@
 version: "3.1"
 
 stories:
-  - story: atendimento_info_path
-    steps:
-      - intent: informacoes_atendimento
-      - action: utter_informacoes_atendimento
-
   - story: happy path
     steps:
       - intent: greet
       - action: utter_greet
       - intent: mood_great
       - action: utter_happy
+
+  - story: informacoes_atendimento path
+    steps:
+      - intent: informacoes_atendimento
+      - action: action_get_atendimentos
+
+  - story: quantidade_atendimentos path
+    steps:
+      - intent: quantidade_atendimentos
+      - action: action_get_atendimentos
+
+  - story: medico_atendimentos path
+    steps:
+      - intent: medico_atendimentos
+      - action: action_get_atendimentos
 
   - story: sad path 1
     steps:
