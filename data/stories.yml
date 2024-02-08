@@ -8,6 +8,11 @@ stories:
       - intent: mood_great
       - action: utter_happy
 
+  - story: Atendimento do Médico
+    steps:
+      - intent: medico_atendimentos
+      - action: action_get_atendimentos
+
   - story: informacoes_atendimento path
     steps:
       - intent: informacoes_atendimento

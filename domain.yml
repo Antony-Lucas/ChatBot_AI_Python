@@ -14,6 +14,10 @@ intents:
 
 entities:
   - atendimento_paciente
+  - nrAtendimento
+  - nmMedico
+  - dtEntrada
+  - dsConvenio
 
 actions:
   - action_get_atendimentos
@@ -21,6 +25,7 @@ actions:
 responses:
   utter_greet:
     - text: "Oi! Como você está?"
+    - text: "Olá, como posso ajudar?"
 
   utter_cheer_up:
     - text: "Aqui está algo para alegrar você:"

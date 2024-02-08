@@ -15,9 +15,16 @@ nlu:
 
   - intent: medico_atendimentos
     examples: |
-      - Quais são os atendimentos do Dr. Williams Fernandes Barra?
-      - Me mostre os atendimentos do Dr. Sâmio Pimentel Ferreira.
-      - Quantos atendimentos o Dr. Ewaldo Luzio Foro de Oliveira realizou?
+      - Quais são os atendimentos do Dr. [Williams Fernandes Barra](nmMedico)?
+      - Quais são os atendimentos do Dr. [williams](nmMedico)?
+      - Me mostre os atendimentos do Dr. [Sâmio Pimentel Ferreira](nmMedico).
+      - Quantos atendimentos o Dr. [Ewaldo Luzio Foro de Oliveira](nmMedico) realizou?
+
+  - lookup: nmMedico
+    examples: |
+      - Williams Fernandes Barra
+      - Sâmio Pimentel Ferreira
+      - Ewaldo Luzio Foro de Oliveira
 
   - intent: greet
     examples: |
